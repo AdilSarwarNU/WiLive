@@ -1,0 +1,238 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true" 
+    android:focusableInTouchMode="true"
+    android:background="#FFFFFF"
+    tools:context=".LoginActivity" >
+
+    <!--
+         The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc.
+    -->
+    
+    <LinearLayout
+        android:id="@+id/LoginScreen_Container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/LoginScreen_Header"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+             >
+             <ImageView
+                 	android:contentDescription="Header Logo"
+                    android:id="@+id/Logo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/logo_cropped"
+                     />
+            
+            
+        </LinearLayout>
+        
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/LoginScreen_Body"
+            android:layout_width="match_parent"
+            android:layout_weight="6"
+            android:layout_height="0dp" >
+             
+            <LinearLayout
+                android:id="@+id/LoginBody_Layout"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+			<ScrollView
+			    android:layout_width="match_parent"
+			    android:layout_height="match_parent" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20sp"
+                    android:orientation="vertical"
+                    android:gravity="center" >
+
+                        <LinearLayout
+                            android:id="@+id/LinearLayout_upperloginbox"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:radius="10dip"
+                            android:background="@drawable/roundradius"
+                            android:orientation="vertical" >
+						<LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:paddingTop="35dp"
+                            android:paddingBottom="10dp"
+                            android:background="@color/black_theme"
+                            android:orientation="vertical" >
+                            <EditText
+                                android:id="@+id/username"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:padding="3dp"
+                                android:textSize="22sp"
+                                android:height="40dp"
+                                android:background="@color/white_theme"
+                                android:hint="  Username" 
+                                >
+                            </EditText>
+                        </LinearLayout>
+						<LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="5dp"
+                            android:background="@color/black_theme"
+                            android:orientation="vertical" >
+                            <EditText
+                                android:id="@+id/password"
+                                android:padding="3dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white_theme"
+                                android:ems="10"
+                                android:height="40dp"
+                                android:textSize="22sp"
+                                android:hint="  Password" />
+                            </LinearLayout>
+                            <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:paddingBottom="5dp"
+                            android:background="@color/black_theme"
+                            android:orientation="vertical" >
+                            
+                            <RelativeLayout 
+                                android:layout_width="match_parent"
+			                    android:layout_height="wrap_content"
+			                    android:paddingTop="5dp"
+			                    android:gravity="center">
+
+                                <Button
+                                    android:id="@+id/button1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingLeft="10dp"
+                                    android:paddingRight="10dp"
+                                    android:ems="4"
+                                    android:textSize="25sp"
+                                    android:background="@color/bluish_theme"
+                                    android:text="Sign In" />
+
+                            </RelativeLayout>   
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical" >
+                        <Button
+                                    android:id="@+id/button3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingRight="5dp"
+                                    android:paddingLeft="5dp"
+                                    android:ems="9"
+                                    android:layout_margin="15dp"
+                                    android:textSize="20sp"
+                                    android:textColor="@color/bluish_theme"
+                                    android:background="@drawable/roundradiusbutton"
+                                    android:text="Create New Account" />
+                        </LinearLayout>
+                </LinearLayout>
+                </ScrollView>
+                
+            </LinearLayout>
+            
+        </LinearLayout>
+        
+		 <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/LoginScreen_Footer"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/silver_theme">
+
+            <RelativeLayout
+                android:id="@+id/bottomStrip"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" 
+                >
+
+                <ImageView
+                    android:id="@+id/techLogo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/techlogo_small"
+                    android:layout_alignParentLeft="true" />
+
+                <ImageView
+                    android:id="@+id/planLogo"
+                    android:layout_marginRight="3dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/planlogo_small"
+                    android:layout_alignParentRight="true"
+                    
+                     />
+                
+                   
+            </RelativeLayout>
+            
+        </LinearLayout>
+    </LinearLayout>   
+         
+
+    <TextView
+        android:id="@+id/fullscreen_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <!--
+         This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows.
+    -->
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true" >
+
+        <LinearLayout
+            android:id="@+id/fullscreen_content_controls"
+            style="?buttonBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:background="@color/black_overlay"
+            android:orientation="horizontal"
+            tools:ignore="UselessParent"
+             >
+
+            <Button
+                android:id="@+id/dummy_button"
+                style="?buttonBarButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/dummy_button"
+                android:visibility="gone" />
+        </LinearLayout>
+    </FrameLayout>
+
+</FrameLayout>
