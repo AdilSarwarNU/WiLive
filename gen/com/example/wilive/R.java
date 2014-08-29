@@ -9,24 +9,22 @@ package com.example.wilive;
 
 public final class R {
     public static final class attr {
-        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
-or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-         */
-        public static final int buttonBarButtonStyle=0x7f010001;
-        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
-or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-         */
-        public static final int buttonBarStyle=0x7f010000;
     }
     public static final class color {
         public static final int black_overlay=0x7f040000;
         public static final int black_theme=0x7f040001;
         public static final int bluish_theme=0x7f040003;
+        public static final int greenish_theme=0x7f040004;
         public static final int silver_theme=0x7f040002;
-        public static final int white_theme=0x7f040004;
+        public static final int white_theme=0x7f040005;
     }
     public static final class dimen {
         /**  Default screen margins, per the Android Design guidelines. 
+
+         Example customization of dimensions originally defined in res/values/dimens.xml
+         (such as screen margins) for screens with more than 820dp of available width. This
+         would include 7" and 10" devices in landscape (~960dp and ~1280dp respectively).
+    
 
          Customize dimensions originally defined in res/values/dimens.xml (such as
          screen margins) for sw720dp devices (e.g. 10" tablets) in landscape here.
@@ -42,36 +40,48 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int planlogo_small=0x7f020003;
         public static final int roundradius=0x7f020004;
         public static final int roundradiusbutton=0x7f020005;
-        public static final int tech_logo=0x7f020006;
-        public static final int techlogo_small=0x7f020007;
-        public static final int wilive_logo=0x7f020008;
+        public static final int settings_icon=0x7f020006;
+        public static final int tab_selected=0x7f020007;
+        public static final int tab_unselected=0x7f020008;
+        public static final int tech_logo=0x7f020009;
+        public static final int techlogo_small=0x7f02000a;
+        public static final int wilive_logo=0x7f02000b;
     }
     public static final class id {
-        public static final int LinearLayout_upperloginbox=0x7f090005;
-        public static final int LoginBody_Layout=0x7f090004;
-        public static final int LoginScreen_Body=0x7f090003;
+        public static final int CreateAccount_Button=0x7f09000f;
+        public static final int Header_Logo=0x7f090009;
+        public static final int LoginBody_BlackBox_ET_container=0x7f09000b;
+        public static final int LoginBody_BlackBox_Password=0x7f09000d;
+        public static final int LoginBody_BlackBox_Username=0x7f09000c;
+        public static final int LoginBody_BlackBox_container=0x7f09000a;
+        public static final int LoginBody_LL_SV_LL_container=0x7f090003;
+        public static final int LoginBody_LL_SV_container=0x7f090002;
+        public static final int LoginScreen_Body_container=0x7f090001;
         public static final int LoginScreen_Container=0x7f090000;
-        public static final int LoginScreen_Footer=0x7f09000a;
-        public static final int LoginScreen_Header=0x7f090001;
-        public static final int Logo=0x7f090002;
-        public static final int action_settings=0x7f090011;
-        public static final int bottomStrip=0x7f09000b;
-        public static final int button1=0x7f090008;
-        public static final int button3=0x7f090009;
-        public static final int dummy_button=0x7f090010;
-        public static final int fullscreen_content=0x7f09000e;
-        public static final int fullscreen_content_controls=0x7f09000f;
-        public static final int password=0x7f090007;
-        public static final int planLogo=0x7f09000d;
-        public static final int techLogo=0x7f09000c;
-        public static final int username=0x7f090006;
+        public static final int LoginScreen_Footer=0x7f090004;
+        public static final int LoginScreen_Header_container=0x7f090008;
+        public static final int SignIn_Button=0x7f09000e;
+        public static final int action_settings=0x7f090012;
+        public static final int bottomStrip=0x7f090005;
+        public static final int fullscreen_content=0x7f090010;
+        public static final int fullscreen_content_controls=0x7f090011;
+        public static final int planLogo=0x7f090007;
+        public static final int techLogo=0x7f090006;
     }
     public static final class layout {
-        public static final int activity_login=0x7f030000;
-        public static final int activity_login_home=0x7f030001;
+        public static final int activity_home=0x7f030000;
+        public static final int activity_home_tab=0x7f030001;
+        public static final int activity_info=0x7f030002;
+        public static final int activity_login=0x7f030003;
+        public static final int activity_settings=0x7f030004;
+        public static final int activity_usage_details=0x7f030005;
     }
     public static final class menu {
-        public static final int login_home=0x7f080000;
+        public static final int home=0x7f080000;
+        public static final int home_tab=0x7f080001;
+        public static final int info=0x7f080002;
+        public static final int settings=0x7f080003;
+        public static final int usage_details=0x7f080004;
     }
     public static final class string {
         public static final int action_settings=0x7f060004;
@@ -79,8 +89,16 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int dummy_button=0x7f060001;
         public static final int dummy_content=0x7f060002;
         public static final int hello_world=0x7f060005;
+        public static final int title_activity_home=0x7f060008;
+        public static final int title_activity_home_tab=0x7f060007;
+        public static final int title_activity_info=0x7f06000d;
         public static final int title_activity_login=0x7f060006;
         public static final int title_activity_login_home=0x7f060003;
+        public static final int title_activity_settings=0x7f06000e;
+        public static final int title_activity_usage_details=0x7f06000c;
+        public static final int title_section1=0x7f060009;
+        public static final int title_section2=0x7f06000a;
+        public static final int title_section3=0x7f06000b;
     }
     public static final class style {
         /** 
@@ -113,50 +131,16 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
          */
         public static final int AppTheme=0x7f070001;
         public static final int ButtonBar=0x7f070003;
-        public static final int ButtonBarButton=0x7f070004;
-        public static final int FullscreenActionBarStyle=0x7f070005;
+        public static final int ButtonBarButton=0x7f070007;
+        public static final int CustomTabWidget=0x7f070005;
+        public static final int CustomTabWidgetText=0x7f070006;
+        public static final int CustomTheme=0x7f070004;
+        public static final int FullscreenActionBarStyle=0x7f070008;
+        /**          <item name="buttonBarStyle">@style/ButtonBar</item> 
+         <item name="buttonBarButtonStyle">@style/ButtonBarButton</item> 
+         <item name="buttonBarStyle">?android:attr/buttonBarStyle</item> 
+         <item name="buttonBarButtonStyle">?android:attr/buttonBarButtonStyle</item> 
+         */
         public static final int FullscreenTheme=0x7f070002;
     }
-    public static final class styleable {
-        /** 
-         Declare custom theme attributes that allow changing which styles are
-         used for button bars depending on the API level.
-         ?android:attr/buttonBarStyle is new as of API 11 so this is
-         necessary to support previous API levels.
-    
-           <p>Includes the following attributes:</p>
-           <table>
-           <colgroup align="left" />
-           <colgroup align="left" />
-           <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #ButtonBarContainerTheme_buttonBarButtonStyle com.example.wilive:buttonBarButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #ButtonBarContainerTheme_buttonBarStyle com.example.wilive:buttonBarStyle}</code></td><td></td></tr>
-           </table>
-           @see #ButtonBarContainerTheme_buttonBarButtonStyle
-           @see #ButtonBarContainerTheme_buttonBarStyle
-         */
-        public static final int[] ButtonBarContainerTheme = {
-            0x7f010000, 0x7f010001
-        };
-        /**
-          <p>This symbol is the offset where the {@link com.example.wilive.R.attr#buttonBarButtonStyle}
-          attribute's value can be found in the {@link #ButtonBarContainerTheme} array.
-
-
-          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
-or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.wilive:buttonBarButtonStyle
-        */
-        public static final int ButtonBarContainerTheme_buttonBarButtonStyle = 1;
-        /**
-          <p>This symbol is the offset where the {@link com.example.wilive.R.attr#buttonBarStyle}
-          attribute's value can be found in the {@link #ButtonBarContainerTheme} array.
-
-
-          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
-or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.wilive:buttonBarStyle
-        */
-        public static final int ButtonBarContainerTheme_buttonBarStyle = 0;
-    };
 }

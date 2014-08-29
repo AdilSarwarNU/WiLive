@@ -21,14 +21,14 @@
 
         <LinearLayout
             android:orientation="vertical"
-            android:id="@+id/LoginScreen_Header"
+            android:id="@+id/LoginScreen_Header_container"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="1"
+            android:layout_weight="1.5"
              >
              <ImageView
+                 	android:id="@+id/Header_Logo"
                  	android:contentDescription="Header Logo"
-                    android:id="@+id/Logo"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
@@ -40,30 +40,27 @@
         
         <LinearLayout
             android:orientation="vertical"
-            android:id="@+id/LoginScreen_Body"
+            android:id="@+id/LoginScreen_Body_container"
             android:layout_width="match_parent"
-            android:layout_weight="6"
+            android:layout_weight="7"
             android:layout_height="0dp" >
              
-            <LinearLayout
-                android:id="@+id/LoginBody_Layout"
-                android:orientation="vertical"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
 			<ScrollView
+			    android:id="@+id/LoginBody_LL_SV_container"
 			    android:layout_width="match_parent"
-			    android:layout_height="match_parent" >
+			    android:layout_height="match_parent" 
+			    android:gravity="center">
 
                 <LinearLayout
+                    android:id="@+id/LoginBody_LL_SV_LL_container"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="20sp"
+                    android:layout_marginTop="25sp"
                     android:orientation="vertical"
                     android:gravity="center" >
 
                         <LinearLayout
-                            android:id="@+id/LinearLayout_upperloginbox"
+                            android:id="@+id/LoginBody_BlackBox_container"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:padding="5dp"
@@ -71,6 +68,7 @@
                             android:background="@drawable/roundradius"
                             android:orientation="vertical" >
 						<LinearLayout
+						    android:id="@+id/LoginBody_BlackBox_ET_container"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:paddingTop="35dp"
@@ -78,15 +76,18 @@
                             android:background="@color/black_theme"
                             android:orientation="vertical" >
                             <EditText
-                                android:id="@+id/username"
-                                android:layout_width="wrap_content"
+                                android:id="@+id/LoginBody_BlackBox_Username"
+                                android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:ems="10"
                                 android:padding="3dp"
+                                android:singleLine="true"
+                                android:maxLength="20"
                                 android:textSize="22sp"
-                                android:height="40dp"
+                                android:inputType="text"
+                                android:textColor="@color/black_theme"
                                 android:background="@color/white_theme"
-                                android:hint="  Username" 
+                                android:hint="  Username"
                                 >
                             </EditText>
                         </LinearLayout>
@@ -97,16 +98,21 @@
                             android:paddingBottom="5dp"
                             android:background="@color/black_theme"
                             android:orientation="vertical" >
+
                             <EditText
-                                android:id="@+id/password"
-                                android:padding="3dp"
-                                android:layout_width="wrap_content"
+                                android:id="@+id/LoginBody_BlackBox_Password"
+                                android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:background="@color/white_theme"
                                 android:ems="10"
-                                android:height="40dp"
+                                android:hint=" Password"
+                                android:inputType="textPassword"
+                                android:padding="3dp"
+                                android:singleLine="true"
+                                android:maxLength="20"
                                 android:textSize="22sp"
-                                android:hint="  Password" />
+                                android:textColor="@color/black_theme" />
+
                             </LinearLayout>
                             <LinearLayout
                             android:layout_width="match_parent"
@@ -122,14 +128,16 @@
 			                    android:gravity="center">
 
                                 <Button
-                                    android:id="@+id/button1"
+                                    android:id="@+id/SignIn_Button"
+                                    style="?android:attr/buttonStyleSmall"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:paddingLeft="10dp"
+                                    android:minHeight="40dp"
                                     android:paddingRight="10dp"
                                     android:ems="4"
                                     android:textSize="25sp"
-                                    android:background="@color/bluish_theme"
+                                    android:background="@color/greenish_theme"
                                     android:text="Sign In" />
 
                             </RelativeLayout>   
@@ -140,13 +148,13 @@
                             android:layout_height="wrap_content"
                             android:orientation="vertical" >
                         <Button
-                                    android:id="@+id/button3"
+                                    android:id="@+id/CreateAccount_Button"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:paddingRight="5dp"
                                     android:paddingLeft="5dp"
                                     android:ems="9"
-                                    android:layout_margin="15dp"
+                                    android:layout_margin="25dp"
                                     android:textSize="20sp"
                                     android:textColor="@color/bluish_theme"
                                     android:background="@drawable/roundradiusbutton"
@@ -155,7 +163,6 @@
                 </LinearLayout>
                 </ScrollView>
                 
-            </LinearLayout>
             
         </LinearLayout>
         
@@ -215,7 +222,7 @@
 
         <LinearLayout
             android:id="@+id/fullscreen_content_controls"
-            style="?buttonBarStyle"
+            style="buttonBarStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom|center_horizontal"
@@ -223,15 +230,6 @@
             android:orientation="horizontal"
             tools:ignore="UselessParent"
              >
-
-            <Button
-                android:id="@+id/dummy_button"
-                style="?buttonBarButtonStyle"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="@string/dummy_button"
-                android:visibility="gone" />
         </LinearLayout>
     </FrameLayout>
 

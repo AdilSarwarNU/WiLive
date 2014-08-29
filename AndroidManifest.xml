@@ -5,7 +5,7 @@
     android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="9"
+        android:minSdkVersion="11"
         android:targetSdkVersion="18" />
 
     <supports-screens
@@ -23,9 +23,11 @@
             android:name="com.example.wilive.LoginHomeActivity"
             android:label="@string/title_activity_login_home" >
             <intent-filter>
-<!--                 <action android:name="android.intent.action.MAIN" /> -->
 
-<!--                 <category android:name="android.intent.category.LAUNCHER" /> -->
+                <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+                <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
             </intent-filter>
         </activity>
         <activity
@@ -38,6 +40,27 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.wilive.HomeTabActivity"
+            android:label="@string/title_activity_home_tab"
+            android:theme="@style/CustomTheme" >
+        </activity>
+        <activity
+            android:name="com.example.wilive.HomeActivity"
+            android:label="@string/title_activity_home" >
+        </activity>
+        <activity
+            android:name="com.example.wilive.UsageDetailsActivity"
+            android:label="@string/title_activity_usage_details" >
+        </activity>
+        <activity
+            android:name="com.example.wilive.InfoActivity"
+            android:label="@string/title_activity_info" >
+        </activity>
+        <activity
+            android:name="com.example.wilive.SettingsActivity"
+            android:label="@string/title_activity_settings" >
         </activity>
     </application>
 

@@ -1,15 +1,17 @@
 package com.example.wilive;
 
-import com.example.wilive.util.SystemUiHider;
-
 import android.annotation.TargetApi;
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.Window;
+import android.widget.Button;
+
+import com.example.wilive.util.SystemUiHider;
 
 /**
  * An example full-screen activity that shows and hides the system UI (i.e.
@@ -117,6 +119,19 @@ public class LoginActivity extends Activity {
 		// while interacting with the UI.
 //		findViewById(R.id.dummy_button).setOnTouchListener(
 //				mDelayHideTouchListener);
+		
+		Button signIn = (Button) findViewById(R.id.SignIn_Button);
+		
+		signIn.setOnClickListener(new View.OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				Intent i = new Intent(LoginActivity.this,HomeTabActivity.class);
+				startActivity(i);
+				
+			}
+		});
 	}
 
 	@Override
