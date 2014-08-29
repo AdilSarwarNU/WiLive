@@ -2,13 +2,17 @@ package com.example.wilive;
 
 import android.app.TabActivity;
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
+import android.view.Gravity;
 import android.view.Menu;
+import android.view.View;
+import android.view.ViewGroup;
 import android.widget.TabHost;
-import android.widget.Toast;
 import android.widget.TabHost.OnTabChangeListener;
 import android.widget.TabHost.TabSpec;
 import android.widget.TabWidget;
+import android.widget.TextView;
 
 public class HomeTabActivity extends TabActivity {
 
@@ -18,7 +22,7 @@ public class HomeTabActivity extends TabActivity {
 		setContentView(R.layout.activity_home_tab);
 		final String []array = new String[4];
 		array[0] = "Home";
-		array[1] = "Usage Details";
+		array[1] = "Usage";
 		array[2] = "Info";
 		array[3] = "Settings";
 		
@@ -32,8 +36,8 @@ public class HomeTabActivity extends TabActivity {
 	        tabHost.addTab(homespec); // Adding home tab
 	        
 //	        // Tab for Usage Details
-	        TabSpec usagespec = tabHost.newTabSpec("Usage Details");
-	        usagespec.setIndicator("Usage Details");
+	        TabSpec usagespec = tabHost.newTabSpec("Usage");
+	        usagespec.setIndicator("Usage");
 	        Intent usageIntent = new Intent(this, UsageDetailsActivity.class);
 	        usagespec.setContent(usageIntent);
 	        tabHost.addTab(usagespec); // Adding usage details tab
@@ -52,6 +56,35 @@ public class HomeTabActivity extends TabActivity {
 	        Intent settingIntent = new Intent(this, SettingsActivity.class);
 	        settingspec.setContent(settingIntent);
 	        tabHost.addTab(settingspec); // Adding Settings tab
+	        
+	        tabHost.getTabWidget().getChildAt(0).setBackgroundColor(Color.parseColor("#2A6587"));
+	        tabHost.getTabWidget().getChildAt(1).setBackgroundResource(R.drawable.tab_unselected);
+	        tabHost.getTabWidget().getChildAt(2).setBackgroundResource(R.drawable.tab_unselected);
+	        tabHost.getTabWidget().getChildAt(3).setBackgroundResource(R.drawable.tab_unselected);
+	        
+	        int tabCount = tabHost.getTabWidget().getTabCount();
+	        for (int i = 0; i < tabCount; i++) {
+	            final View view = tabHost.getTabWidget().getChildTabViewAt(i);
+	            if ( view != null ) {
+	                // reduce height of the tab
+	                view.getLayoutParams().height *= 1;
+
+	                //  get title text view
+	                final View textView = view.findViewById(android.R.id.title);
+	                if ( textView instanceof TextView ) {
+	                    // just in case check the type
+
+	                    // center text
+	                    ((TextView) textView).setGravity(Gravity.CENTER);
+	                    // wrap text
+	                    ((TextView) textView).setSingleLine(false);
+
+	                    // explicitly set layout parameters
+	                    textView.getLayoutParams().height = ViewGroup.LayoutParams.FILL_PARENT;
+	                    textView.getLayoutParams().width = ViewGroup.LayoutParams.WRAP_CONTENT;
+	                }
+	            }
+	        }
 	        
 	        tabHost.setOnTabChangedListener(new OnTabChangeListener() {
 	        	

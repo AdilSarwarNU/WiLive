@@ -13,10 +13,11 @@ public final class R {
     public static final class color {
         public static final int black_overlay=0x7f040000;
         public static final int black_theme=0x7f040001;
+        public static final int bluish_tech=0x7f040005;
         public static final int bluish_theme=0x7f040003;
         public static final int greenish_theme=0x7f040004;
         public static final int silver_theme=0x7f040002;
-        public static final int white_theme=0x7f040005;
+        public static final int white_theme=0x7f040006;
     }
     public static final class dimen {
         /**  Default screen margins, per the Android Design guidelines. 
@@ -73,15 +74,17 @@ public final class R {
         public static final int activity_home_tab=0x7f030001;
         public static final int activity_info=0x7f030002;
         public static final int activity_login=0x7f030003;
-        public static final int activity_settings=0x7f030004;
-        public static final int activity_usage_details=0x7f030005;
+        public static final int activity_login_home=0x7f030004;
+        public static final int activity_settings=0x7f030005;
+        public static final int activity_usage_details=0x7f030006;
     }
     public static final class menu {
         public static final int home=0x7f080000;
         public static final int home_tab=0x7f080001;
         public static final int info=0x7f080002;
-        public static final int settings=0x7f080003;
-        public static final int usage_details=0x7f080004;
+        public static final int login_home=0x7f080003;
+        public static final int settings=0x7f080004;
+        public static final int usage_details=0x7f080005;
     }
     public static final class string {
         public static final int action_settings=0x7f060004;
