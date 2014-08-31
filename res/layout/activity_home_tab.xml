@@ -19,14 +19,68 @@ android:layout_gravity="center_vertical|center_horizontal">
             android:gravity="center_vertical|center_horizontal"
 android:layout_gravity="center_vertical|center_horizontal"
              />
-        <FrameLayout
-            android:id="@android:id/tabcontent"
-            android:layout_width="0dp"
-            android:layout_height="0dp"/>
-        <android.support.v4.view.ViewPager
-		    xmlns:android="http://schemas.android.com/apk/res/android"
-		    android:id="@+id/pager"
-		    android:layout_width="match_parent"
-		    android:layout_height="match_parent" />
+        <LinearLayout
+        android:id="@+id/TabScreen_Container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+        
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/TabScreen_Body_container"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="8"
+            android:gravity="center" >
+                    <FrameLayout
+			            android:id="@android:id/tabcontent"
+			            android:layout_width="0dp"
+			            android:layout_height="0dp"/>
+                    
+			        <android.support.v4.view.ViewPager
+					    xmlns:android="http://schemas.android.com/apk/res/android"
+					    android:id="@+id/pager"
+					    android:layout_width="match_parent"
+					    android:layout_height="match_parent" />
+
+            
+        </LinearLayout>
+        
+		 <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/TabScreen_Footer"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/silver_theme">
+
+            <RelativeLayout
+                android:id="@+id/Tab_bottomStrip"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" 
+                >
+
+                <ImageView
+                    android:id="@+id/techLogo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/techlogo_small"
+                    android:layout_alignParentLeft="true" />
+
+                <ImageView
+                    android:id="@+id/planLogo"
+                    android:layout_marginRight="3dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/planlogo_small"
+                    android:layout_alignParentRight="true"
+                    
+                     />
+                
+                   
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+        
     </LinearLayout>
 </TabHost>

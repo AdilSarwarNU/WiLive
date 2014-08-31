@@ -14,13 +14,6 @@
         android:layout_height="match_parent"
         android:orientation="vertical" >
         
-        <LinearLayout
-            android:orientation="vertical"
-            android:id="@+id/LoginScreen_Body_container"
-            android:layout_width="match_parent"
-            android:layout_weight="8"
-            android:layout_height="0dp" >
-
 			<ScrollView
 			    android:id="@+id/LoginBody_LL_SV_container"
 			    android:layout_width="match_parent"
@@ -34,50 +27,17 @@
                     android:layout_marginTop="25sp"
                     android:orientation="vertical"
                     android:gravity="center" >
+
                     <TextView
                         android:id="@+id/textView1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:textSize="50sp"
+                        android:textColor="@color/bluish_theme"
                         android:text="Usage Details" />
+
                 </LinearLayout>
                 </ScrollView>
             
         </LinearLayout>
-        
-		 <LinearLayout
-            android:orientation="vertical"
-            android:id="@+id/LoginScreen_Footer"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:background="@color/silver_theme">
-
-            <RelativeLayout
-                android:id="@+id/bottomStrip"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" 
-                >
-
-                <ImageView
-                    android:id="@+id/techLogo"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:src="@drawable/techlogo_small"
-                    android:layout_alignParentLeft="true" />
-
-                <ImageView
-                    android:id="@+id/planLogo"
-                    android:layout_marginRight="3dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:src="@drawable/planlogo_small"
-                    android:layout_alignParentRight="true"
-                    
-                     />
-                
-                   
-            </RelativeLayout>
-            
-        </LinearLayout>
-    </LinearLayout>
 </RelativeLayout>

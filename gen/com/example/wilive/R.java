@@ -49,27 +49,31 @@ public final class R {
         public static final int wilive_logo=0x7f02000b;
     }
     public static final class id {
-        public static final int CreateAccount_Button=0x7f090011;
-        public static final int Header_Logo=0x7f09000b;
-        public static final int LoginBody_BlackBox_ET_container=0x7f09000d;
-        public static final int LoginBody_BlackBox_Password=0x7f09000f;
-        public static final int LoginBody_BlackBox_Username=0x7f09000e;
-        public static final int LoginBody_BlackBox_container=0x7f09000c;
-        public static final int LoginBody_LL_SV_LL_container=0x7f090003;
-        public static final int LoginBody_LL_SV_container=0x7f090002;
-        public static final int LoginScreen_Body_container=0x7f090001;
+        public static final int CreateAccount_Button=0x7f090013;
+        public static final int Header_Logo=0x7f09000c;
+        public static final int LoginBody_BlackBox_ET_container=0x7f09000f;
+        public static final int LoginBody_BlackBox_Password=0x7f090011;
+        public static final int LoginBody_BlackBox_Username=0x7f090010;
+        public static final int LoginBody_BlackBox_container=0x7f09000e;
+        public static final int LoginBody_LL_SV_LL_container=0x7f090002;
+        public static final int LoginBody_LL_SV_container=0x7f090001;
+        public static final int LoginScreen_Body_container=0x7f09000d;
         public static final int LoginScreen_Container=0x7f090000;
-        public static final int LoginScreen_Footer=0x7f090005;
-        public static final int LoginScreen_Header_container=0x7f09000a;
-        public static final int SignIn_Button=0x7f090010;
-        public static final int action_settings=0x7f090014;
-        public static final int bottomStrip=0x7f090006;
-        public static final int fullscreen_content=0x7f090012;
-        public static final int fullscreen_content_controls=0x7f090013;
-        public static final int pager=0x7f090009;
-        public static final int planLogo=0x7f090008;
-        public static final int techLogo=0x7f090007;
-        public static final int textView1=0x7f090004;
+        public static final int LoginScreen_Footer=0x7f090014;
+        public static final int LoginScreen_Header_container=0x7f09000b;
+        public static final int SignIn_Button=0x7f090012;
+        public static final int TabScreen_Body_container=0x7f090005;
+        public static final int TabScreen_Container=0x7f090004;
+        public static final int TabScreen_Footer=0x7f090007;
+        public static final int Tab_bottomStrip=0x7f090008;
+        public static final int action_settings=0x7f090018;
+        public static final int bottomStrip=0x7f090015;
+        public static final int fullscreen_content=0x7f090016;
+        public static final int fullscreen_content_controls=0x7f090017;
+        public static final int pager=0x7f090006;
+        public static final int planLogo=0x7f09000a;
+        public static final int techLogo=0x7f090009;
+        public static final int textView1=0x7f090003;
     }
     public static final class layout {
         public static final int activity_home=0x7f030000;

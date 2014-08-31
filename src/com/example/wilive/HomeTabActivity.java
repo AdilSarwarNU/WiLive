@@ -123,7 +123,9 @@ public class HomeTabActivity extends FragmentActivity {
 		        case 2:
 		            // fragment activity
 		        	return new InfoActivity();
-		        	
+//		        case 3:
+//		            // fragment activity
+//		        	return new SettingsActivity();
 		        default:
 		        	return new SettingsActivity();
 		        }
