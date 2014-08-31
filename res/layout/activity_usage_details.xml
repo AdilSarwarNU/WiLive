@@ -28,14 +28,171 @@
                     android:orientation="vertical"
                     android:gravity="center" >
 
-                    <TextView
-                        android:id="@+id/textView1"
+                    <LinearLayout
+	                    android:id="@+id/LoginBody_LL_SV_LL_container_row1"
+	                    android:layout_width="match_parent"
+	                    android:layout_height="wrap_content"
+	                    android:orientation="horizontal"
+	                    android:gravity="left"
+	                    android:layout_marginLeft="10dp" >
+	
+	                    <TextView
+	                        android:id="@+id/Power_Usage"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:text="Power Usage(Last Hour): "
+	                        android:textSize="18sp"
+	                        android:textColor="@color/bluish_theme"
+	                        android:textStyle="bold"
+	                        android:textAppearance="?android:attr/textAppearanceMedium" />
+	
+	                    <TextView
+	                        android:id="@+id/Power_Usage_Value"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:text="10 KWH"
+	                        android:textSize="18sp"
+	                        android:textColor="@color/bluish_theme"
+	                        android:textAppearance="?android:attr/textAppearanceMedium" />
+	
+	                </LinearLayout>
+	                <LinearLayout
+	                    android:id="@+id/LoginBody_LL_SV_LL_container_row2"
+	                    android:layout_width="match_parent"
+	                    android:layout_height="wrap_content"
+	                    android:orientation="horizontal"
+	                    android:layout_marginTop="8sp"
+	                    android:gravity="left"
+	                    android:layout_marginLeft="10dp" >
+	
+	                    <TextView
+	                        android:id="@+id/Units_Used"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:text="Units Used: "
+	                        android:textStyle="bold"
+	                        android:textSize="18sp"
+	                        android:textColor="@color/bluish_theme"
+	                        android:textAppearance="?android:attr/textAppearanceMedium" />
+	
+	                    <TextView
+	                        android:id="@+id/Units_Used_Value"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:text="908 Units"
+	                        android:textSize="18sp"
+	                        android:textColor="@color/bluish_theme"
+	                        android:textAppearance="?android:attr/textAppearanceMedium" />
+	
+	                </LinearLayout>
+	                <LinearLayout
+	                    android:id="@+id/LoginBody_LL_SV_LL_container_row3"
+	                    android:layout_width="match_parent"
+	                    android:layout_height="wrap_content"
+	                    android:orientation="horizontal"
+	                    android:layout_marginTop="8sp"
+	                    android:gravity="left"
+	                    android:layout_marginLeft="10dp" >
+	
+	                    <TextView
+	                        android:id="@+id/Current_Bill"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:text="Current_Bill: "
+	                        android:textSize="18sp"
+	                        android:textStyle="bold"
+	                        android:textColor="@color/bluish_theme"
+	                        android:textAppearance="?android:attr/textAppearanceMedium" />
+	
+	                    <TextView
+	                        android:id="@+id/Current_Bill_Value"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:text="Rs. 10,000"
+	                        android:textSize="18sp"
+	                        android:textColor="@color/bluish_theme"
+	                        android:textAppearance="?android:attr/textAppearanceMedium" />
+	                </LinearLayout>
+	                <LinearLayout
+	                    android:id="@+id/LoginBody_LL_SV_LL_container_row4"
+	                    android:layout_width="match_parent"
+	                    android:layout_height="wrap_content"
+	                    android:orientation="horizontal"
+	                    android:layout_marginTop="8sp"
+	                    android:gravity="left"
+	                    android:layout_marginLeft="10dp" >
+	
+	                    <TextView
+	                        android:id="@+id/Expected_Bill"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:text="Expected Bill: "
+	                        android:textStyle="bold"
+	                        android:textSize="18sp"
+	                        android:textColor="@color/bluish_theme"
+	                        android:textAppearance="?android:attr/textAppearanceMedium" />
+	
+	                    <TextView
+	                        android:id="@+id/Expected_Bill_Value"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:text="Rs. 20,000"
+	                        android:textSize="18sp"
+	                        android:textColor="@color/bluish_theme"
+	                        android:textAppearance="?android:attr/textAppearanceMedium" />
+	                </LinearLayout>
+	                <LinearLayout
+	                    android:id="@+id/LoginBody_LL_SV_LL_container_row5"
+	                    android:layout_width="match_parent"
+	                    android:layout_height="wrap_content"
+	                    android:orientation="horizontal"
+	                    android:layout_marginTop="8sp"
+	                    android:gravity="left"
+	                    android:layout_marginLeft="10dp" >
+	
+	                    <TextView
+	                        android:id="@+id/Current_Voltage"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:text="Current Voltage: "
+	                        android:textStyle="bold"
+	                        android:textSize="18sp"
+	                        android:textColor="@color/bluish_theme"
+	                        android:textAppearance="?android:attr/textAppearanceMedium" />
+	
+	                    <TextView
+	                        android:id="@+id/Current_Voltage_Value"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:text="220V"
+	                        android:textSize="18sp"
+	                        android:textColor="@color/bluish_theme"
+	                        android:textAppearance="?android:attr/textAppearanceMedium" />
+	
+	                </LinearLayout>
+	                <LinearLayout
+	                    android:id="@+id/LoginBody_LL_SV_LL_container_row6"
+	                    android:layout_width="match_parent"
+	                    android:layout_height="wrap_content"
+	                    android:orientation="horizontal"
+	                    android:layout_marginTop="8sp"
+	                    android:gravity="center"
+	                  >
+	
+					<Button
+                        android:id="@+id/Usage_History_Button"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="50sp"
-                        android:textColor="@color/bluish_theme"
-                        android:text="Usage Details" />
-
+                        android:layout_margin="15dp"
+                        android:background="@drawable/settingsroundbutton"
+                        android:ems="8"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:text="Usage History"
+                        android:textStyle="bold"
+                        android:textColor="@color/white_theme"
+                        android:textSize="23sp" />
+					</LinearLayout>
                 </LinearLayout>
                 </ScrollView>
             

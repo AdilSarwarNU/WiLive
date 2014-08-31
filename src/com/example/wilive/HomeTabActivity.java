@@ -1,26 +1,22 @@
 package com.example.wilive;
 
 
-import android.app.TabActivity;
-import android.content.Context;
-import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentActivity;
+import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TabHost;
 import android.widget.TabHost.OnTabChangeListener;
-import android.widget.TabHost.TabContentFactory;
-import android.widget.TabHost.TabSpec;
 import android.widget.TabWidget;
 import android.widget.TextView;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentActivity;
-import android.support.v4.app.FragmentPagerAdapter;
 
 public class HomeTabActivity extends FragmentActivity {
 	 // Method to add a TabHost
@@ -157,7 +153,16 @@ public class HomeTabActivity extends FragmentActivity {
         @Override
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
                 Bundle savedInstanceState) {
-            View rootView = inflater.inflate(R.layout.activity_usage_details, container, false);
+           final View rootView = inflater.inflate(R.layout.activity_usage_details, container, false);
+            Button getUsage = (Button) rootView.findViewById(R.id.Usage_History_Button);
+            getUsage.setOnClickListener(new View.OnClickListener() {
+				
+				@Override
+				public void onClick(View v) {
+					// TODO Auto-generated method stub
+					new RequestUsageDetails(rootView, Constants.deviceID, Constants.accessToken).execute();
+				}
+			});
             return rootView;
         }
     }
