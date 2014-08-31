@@ -19,23 +19,156 @@
 			    android:layout_width="match_parent"
 			    android:layout_height="match_parent" 
 			    android:gravity="center">
-
-                <LinearLayout
-                    android:id="@+id/LoginBody_LL_SV_LL_container"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="25sp"
-                    android:orientation="vertical"
-                    android:gravity="center" >
-
-                    <TextView
-                        android:id="@+id/textView1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textSize="50sp"
-                        android:textColor="@color/bluish_theme"
-                        android:text="Info" />
-
+				<LinearLayout
+				    android:id="@+id/LoginBody_LL_SV_LL_container"
+	                    android:layout_width="match_parent"
+	                    android:layout_height="wrap_content"
+	                    android:layout_marginTop="35sp"
+	                    android:orientation="vertical"
+	                    android:gravity="left"
+	                    android:layout_marginLeft="10dp">
+	                <LinearLayout
+	                    android:id="@+id/LoginBody_LL_SV_LL_container_row1"
+	                    android:layout_width="match_parent"
+	                    android:layout_height="wrap_content"
+	                    android:orientation="horizontal"
+	                    android:gravity="left"
+	                    android:layout_marginLeft="10dp" >
+	
+	                    <TextView
+	                        android:id="@+id/User_ID"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:text="User ID: "
+	                        android:textSize="18sp"
+	                        android:textColor="@color/bluish_theme"
+	                        android:textStyle="bold"
+	                        android:textAppearance="?android:attr/textAppearanceMedium" />
+	
+	                    <TextView
+	                        android:id="@+id/User_ID_Value"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:text="11A33C567D90"
+	                        android:textSize="18sp"
+	                        android:textColor="@color/bluish_theme"
+	                        android:textAppearance="?android:attr/textAppearanceMedium" />
+	
+	                </LinearLayout>
+	                <LinearLayout
+	                    android:id="@+id/LoginBody_LL_SV_LL_container_row2"
+	                    android:layout_width="match_parent"
+	                    android:layout_height="wrap_content"
+	                    android:orientation="horizontal"
+	                    android:layout_marginTop="8sp"
+	                    android:gravity="left"
+	                    android:layout_marginLeft="10dp" >
+	
+	                    <TextView
+	                        android:id="@+id/User_Name"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:text="User Name: "
+	                        android:textStyle="bold"
+	                        android:textSize="18sp"
+	                        android:textColor="@color/bluish_theme"
+	                        android:textAppearance="?android:attr/textAppearanceMedium" />
+	
+	                    <TextView
+	                        android:id="@+id/User_Name_Value"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:text="Muhammad Ahmed"
+	                        android:textSize="18sp"
+	                        android:textColor="@color/bluish_theme"
+	                        android:textAppearance="?android:attr/textAppearanceMedium" />
+	
+	                </LinearLayout>
+	                <LinearLayout
+	                    android:id="@+id/LoginBody_LL_SV_LL_container_row3"
+	                    android:layout_width="match_parent"
+	                    android:layout_height="wrap_content"
+	                    android:orientation="horizontal"
+	                    android:layout_marginTop="8sp"
+	                    android:gravity="left"
+	                    android:layout_marginLeft="10dp" >
+	
+	                    <TextView
+	                        android:id="@+id/Device_status"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:text="Device Status: "
+	                        android:textSize="18sp"
+	                        android:textStyle="bold"
+	                        android:textColor="@color/bluish_theme"
+	                        android:textAppearance="?android:attr/textAppearanceMedium" />
+	
+	                    <TextView
+	                        android:id="@+id/Device_status_Value"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:text="Online"
+	                        android:textSize="18sp"
+	                        android:textColor="@color/bluish_theme"
+	                        android:textAppearance="?android:attr/textAppearanceMedium" />
+	                </LinearLayout>
+	                <LinearLayout
+	                    android:id="@+id/LoginBody_LL_SV_LL_container_row4"
+	                    android:layout_width="match_parent"
+	                    android:layout_height="wrap_content"
+	                    android:orientation="horizontal"
+	                    android:layout_marginTop="8sp"
+	                    android:gravity="left"
+	                    android:layout_marginLeft="10dp" >
+	
+	                    <TextView
+	                        android:id="@+id/Address"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:text="Address: "
+	                        android:textStyle="bold"
+	                        android:textSize="18sp"
+	                        android:textColor="@color/bluish_theme"
+	                        android:textAppearance="?android:attr/textAppearanceMedium" />
+	
+	                    <TextView
+	                        android:id="@+id/Address_Value"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:text="XYZ town Lahore, Pakistan"
+	                        android:textSize="18sp"
+	                        android:textColor="@color/bluish_theme"
+	                        android:textAppearance="?android:attr/textAppearanceMedium" />
+	                </LinearLayout>
+	                <LinearLayout
+	                    android:id="@+id/LoginBody_LL_SV_LL_container_row5"
+	                    android:layout_width="match_parent"
+	                    android:layout_height="wrap_content"
+	                    android:orientation="horizontal"
+	                    android:layout_marginTop="8sp"
+	                    android:gravity="left"
+	                    android:layout_marginLeft="10dp" >
+	
+	                    <TextView
+	                        android:id="@+id/time"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:text="Time: "
+	                        android:textStyle="bold"
+	                        android:textSize="18sp"
+	                        android:textColor="@color/bluish_theme"
+	                        android:textAppearance="?android:attr/textAppearanceMedium" />
+	
+	                    <TextView
+	                        android:id="@+id/time_Value"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:text="12:00 am"
+	                        android:textSize="18sp"
+	                        android:textColor="@color/bluish_theme"
+	                        android:textAppearance="?android:attr/textAppearanceMedium" />
+	
+	                </LinearLayout>
                 </LinearLayout>
                 </ScrollView>
             
