@@ -9,35 +9,72 @@
     tools:context=".HomeActivity"
     android:background="#FFFFFF" >
 	<LinearLayout
-        android:id="@+id/LoginScreen_Container"
+        android:id="@+id/Settings_Container"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical" >
-        
-			<ScrollView
-			    android:id="@+id/LoginBody_LL_SV_container"
-			    android:layout_width="match_parent"
-			    android:layout_height="match_parent" 
-			    android:gravity="center">
-
                 <LinearLayout
-                    android:id="@+id/LoginBody_LL_SV_LL_container"
+                    android:id="@+id/Settings_LL_container"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="25sp"
+                    android:layout_marginTop="30sp"
                     android:orientation="vertical"
                     android:gravity="center" >
 
-                    <TextView
-                        android:id="@+id/textView1"
+                    <Button
+                        android:id="@+id/Settings_ColourScheme_Button"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="50sp"
-                        android:textColor="@color/bluish_theme"
-                        android:text="Settings" />
+                        android:layout_margin="15dp"
+                        android:background="@drawable/settingsroundbutton"
+                        android:ems="8"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:text="Colour Scheme"
+                        android:textStyle="bold"
+                        android:textColor="@color/white_theme"
+                        android:textSize="23sp" />
+                    <Button
+                        android:id="@+id/Settings_GraphType_Button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="15dp"
+                        android:background="@drawable/settingsroundbutton"
+                        android:ems="8"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:text="Graph Type"
+                        android:textStyle="bold"
+                        android:textColor="@color/white_theme"
+                        android:textSize="23sp" />
+                    <Button
+                        android:id="@+id/Settings_ChangePassword_Button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="15dp"
+                        android:background="@drawable/settingsroundbutton"
+                        android:ems="8"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:text="Change Password"
+                        android:textStyle="bold"
+                        android:textColor="@color/white_theme"
+                        android:textSize="23sp" />
+                    <Button
+                        android:id="@+id/Settings_ChangeTarrif_Button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="15dp"
+                        android:background="@drawable/settingsroundbutton"
+                        android:ems="8"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:text="Change Tarrif"
+                        android:textStyle="bold"
+                        android:textColor="@color/white_theme"
+                        android:textSize="23sp" />
 
-                </LinearLayout>
-                </ScrollView>
-            
+
+            </LinearLayout>
         </LinearLayout>
 </RelativeLayout>

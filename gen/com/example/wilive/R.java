@@ -42,11 +42,12 @@ public final class R {
         public static final int roundradius=0x7f020004;
         public static final int roundradiusbutton=0x7f020005;
         public static final int settings_icon=0x7f020006;
-        public static final int tab_selected=0x7f020007;
-        public static final int tab_unselected=0x7f020008;
-        public static final int tech_logo=0x7f020009;
-        public static final int techlogo_small=0x7f02000a;
-        public static final int wilive_logo=0x7f02000b;
+        public static final int settingsroundbutton=0x7f020007;
+        public static final int tab_selected=0x7f020008;
+        public static final int tab_unselected=0x7f020009;
+        public static final int tech_logo=0x7f02000a;
+        public static final int techlogo_small=0x7f02000b;
+        public static final int wilive_logo=0x7f02000c;
     }
     public static final class id {
         public static final int CreateAccount_Button=0x7f090013;
@@ -61,12 +62,18 @@ public final class R {
         public static final int LoginScreen_Container=0x7f090000;
         public static final int LoginScreen_Footer=0x7f090014;
         public static final int LoginScreen_Header_container=0x7f09000b;
+        public static final int Settings_ChangePassword_Button=0x7f09001c;
+        public static final int Settings_ChangeTarrif_Button=0x7f09001d;
+        public static final int Settings_ColourScheme_Button=0x7f09001a;
+        public static final int Settings_Container=0x7f090018;
+        public static final int Settings_GraphType_Button=0x7f09001b;
+        public static final int Settings_LL_container=0x7f090019;
         public static final int SignIn_Button=0x7f090012;
         public static final int TabScreen_Body_container=0x7f090005;
         public static final int TabScreen_Container=0x7f090004;
         public static final int TabScreen_Footer=0x7f090007;
         public static final int Tab_bottomStrip=0x7f090008;
-        public static final int action_settings=0x7f090018;
+        public static final int action_settings=0x7f09001e;
         public static final int bottomStrip=0x7f090015;
         public static final int fullscreen_content=0x7f090016;
         public static final int fullscreen_content_controls=0x7f090017;
