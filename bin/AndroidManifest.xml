@@ -64,12 +64,7 @@
             android:name="com.example.wilive.SettingsActivity"
             android:label="@string/title_activity_settings" >
         </activity>
-        <activity
-            android:name="com.example.wilive.MakeGraph"
-            android:configChanges="orientation|keyboardHidden|screenSize"
-            android:label="@string/title_activity_make_graph"
-            android:theme="@style/FullscreenTheme" >
-        </activity>
+       
     </application>
 
 </manifest>

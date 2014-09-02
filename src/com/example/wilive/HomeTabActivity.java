@@ -1,6 +1,7 @@
 package com.example.wilive;
 
 
+import android.app.Activity;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -12,11 +13,21 @@ import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.View;
 import android.view.ViewGroup;
+import android.webkit.WebView.FindListener;
 import android.widget.Button;
+import android.widget.LinearLayout;
 import android.widget.TabHost;
 import android.widget.TabHost.OnTabChangeListener;
 import android.widget.TabWidget;
 import android.widget.TextView;
+
+
+import com.example.wilive.util.SystemUiHider;
+import com.jjoe64.graphview.BarGraphView;
+import com.jjoe64.graphview.GraphView;
+import com.jjoe64.graphview.GraphView.GraphViewData;
+import com.jjoe64.graphview.GraphViewSeries;
+import com.jjoe64.graphview.LineGraphView;
 
 public class HomeTabActivity extends FragmentActivity {
 	 // Method to add a TabHost
@@ -134,16 +145,55 @@ public class HomeTabActivity extends FragmentActivity {
 	
 		}
 	public static class HomeActivity extends Fragment {
+		View rootView;
 		@Override
 	    public void onCreate(Bundle savedInstanceState) {
 	        super.onCreate(savedInstanceState);
+	        
+	        
 	    }
         @Override
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
                 Bundle savedInstanceState) {
-            View rootView = inflater.inflate(R.layout.activity_home, container, false);
+            rootView = inflater.inflate(R.layout.activity_make_graph, container, false);
+      		drawGraph();
+    		
             return rootView;
         }
+        
+        protected void drawGraph()
+    	{
+    		// init example series data
+    		
+    		GraphViewSeries exampleSeries = new GraphViewSeries(new GraphViewData[] {
+    		    new GraphViewData(1, 2.0d)
+    		    , new GraphViewData(2, 1.5d)
+    		    , new GraphViewData(3, 2.5d)
+    		    , new GraphViewData(4, 1.0d)
+    		    , new GraphViewData(5, 2.0d)
+    		    , new GraphViewData(6, 3.0d)
+    		    , new GraphViewData(7, 1.0d)
+    		    , new GraphViewData(8, 4.0d)
+    		    , new GraphViewData(9, 4.0d)
+    		    , new GraphViewData(10, 4.0d)
+    		    , new GraphViewData(11, 100.0d)
+    		    , new GraphViewData(12, 4.0d)
+    		 
+    		});
+    		 
+    		
+    		GraphView graphView = new BarGraphView(getActivity().getApplicationContext(), "Hello");
+    		graphView.setLegendWidth((float) 3.0);
+    		graphView.setScalable(true);
+    		graphView.setShowLegend(true);
+    		graphView.addSeries(exampleSeries); // data
+    		
+    		LinearLayout layout = (LinearLayout) rootView.findViewById(R.id.graphContainer);
+    		
+    		
+    		layout.addView(graphView);
+    	}
+        
     }
 	public static class UsageDetailsActivity extends Fragment {
 		@Override
