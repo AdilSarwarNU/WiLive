@@ -159,22 +159,27 @@ public class HomeTabActivity extends FragmentActivity {
         protected void drawGraph()
     	{
     		// init example series data
-    		
-    		GraphViewSeries exampleSeries = new GraphViewSeries(new GraphViewData[] {
-    		    new GraphViewData(1, 2.0d)
-    		    , new GraphViewData(2, 1.5d)
-    		    , new GraphViewData(3, 2.5d)
-    		    , new GraphViewData(4, 1.0d)
-    		    , new GraphViewData(5, 2.0d)
-    		    , new GraphViewData(6, 3.0d)
-    		    , new GraphViewData(7, 1.0d)
-    		    , new GraphViewData(8, 4.0d)
-    		    , new GraphViewData(9, 4.0d)
-    		    , new GraphViewData(10, 4.0d)
-    		    , new GraphViewData(11, 100.0d)
-    		    , new GraphViewData(12, 4.0d)
-    		 
-    		});
+        	int j = 10;
+        	GraphViewData[] s = new GraphViewData[31];
+        	for ( int i = 0 ; i <31; i++)
+        	{
+        		
+        		s[i] = new GraphViewData(i+1, j);
+        		j+=10;
+        	}
+        	
+//    		GraphViewSeries exampleSeries = new GraphViewSeries(new GraphViewData[] {
+//    		    new GraphViewData(1, 2.0d)
+//    		    , new GraphViewData(2, 1.5d)
+//    		    , new GraphViewData(3, 2.5d)
+//    		    , new GraphViewData(4, 1.0d)
+//    		    , new GraphViewData(5, 2.0d)
+//    		    , new GraphViewData(6, 3.0d)
+//    		    , new GraphViewData(7, 1.0d)
+//    		       		 
+//    		});
+        	
+        	GraphViewSeries exampleSeries = new GraphViewSeries(s );
     		 
     		
     		GraphView graphView = new BarGraphView(getActivity().getApplicationContext(), "WATT ANALYZER");
@@ -183,8 +188,10 @@ public class HomeTabActivity extends FragmentActivity {
     		graphView.setShowLegend(true);
     		graphView.addSeries(exampleSeries); // data
     		graphView.setBackgroundColor(Color.WHITE);
+    		
     		graphView.getGraphViewStyle().setHorizontalLabelsColor(Color.BLACK);
     		graphView.getGraphViewStyle().setVerticalLabelsColor(Color.BLACK);
+    		graphView.getGraphViewStyle().setTextSize((float) 20);
     		LinearLayout layout = (LinearLayout) rootView.findViewById(R.id.graphContainer);
     		
     		layout.addView(graphView);
