@@ -1,7 +1,6 @@
 package com.example.wilive;
 
 
-import android.app.Activity;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -13,7 +12,6 @@ import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.View;
 import android.view.ViewGroup;
-import android.webkit.WebView.FindListener;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TabHost;
@@ -21,13 +19,10 @@ import android.widget.TabHost.OnTabChangeListener;
 import android.widget.TabWidget;
 import android.widget.TextView;
 
-
-import com.example.wilive.util.SystemUiHider;
 import com.jjoe64.graphview.BarGraphView;
 import com.jjoe64.graphview.GraphView;
 import com.jjoe64.graphview.GraphView.GraphViewData;
 import com.jjoe64.graphview.GraphViewSeries;
-import com.jjoe64.graphview.LineGraphView;
 
 public class HomeTabActivity extends FragmentActivity {
 	 // Method to add a TabHost
@@ -182,14 +177,15 @@ public class HomeTabActivity extends FragmentActivity {
     		});
     		 
     		
-    		GraphView graphView = new BarGraphView(getActivity().getApplicationContext(), "Hello");
+    		GraphView graphView = new BarGraphView(getActivity().getApplicationContext(), "WATT ANALYZER");
     		graphView.setLegendWidth((float) 3.0);
-    		graphView.setScalable(true);
+    		//graphView.setScalable(true);
     		graphView.setShowLegend(true);
     		graphView.addSeries(exampleSeries); // data
-    		
+    		graphView.setBackgroundColor(Color.WHITE);
+    		graphView.getGraphViewStyle().setHorizontalLabelsColor(Color.BLACK);
+    		graphView.getGraphViewStyle().setVerticalLabelsColor(Color.BLACK);
     		LinearLayout layout = (LinearLayout) rootView.findViewById(R.id.graphContainer);
-    		
     		
     		layout.addView(graphView);
     	}

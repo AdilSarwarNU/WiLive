@@ -15,27 +15,69 @@
 </LinearLayout>   
 
 <LinearLayout
+    android:layout_margin="15dp"
     android:id="@+id/graphStatsContainer"
     android:layout_width="match_parent"
     android:layout_height="0dp"
     android:layout_weight="1"
     android:orientation="vertical" >  
    
-    
-     <TextView
-        android:layout_width="match_parent"
+    <LinearLayout 
+        android:layout_width="match_parent" 
+      	android:layout_height="wrap_content"
+        android:orientation="horizontal"        >
+        
+        <TextView
+        android:layout_width="wrap_content"
         android:layout_height="10pt"
-        android:text="Units Used :" 
-        android:textColor="@color/black_theme"
-        android:textSize="20sp"/>
-
-    <TextView
-        android:layout_width="match_parent"
-         android:layout_height="10pt"
-        android:text="Expected Bill :" 
-        android:textColor="@color/black_theme"
-        android:textSize="20sp"/>
- 
+        android:text="Units Used : " 
+        android:textColor="@color/bluish_theme"
+        android:textSize="18sp"
+        
+        android:textStyle="bold"
+		android:textAppearance="?android:attr/textAppearanceMedium" 
+        />
+        
+         <TextView
+             android:id="@+id/units_used_graph_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="10pt"
+        android:text="2305" 
+        android:textColor="@color/bluish_theme"
+        android:textSize="18sp"/>
+        
+        
+        
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="match_parent" 
+      
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+         
+    	<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="10pt"
+        android:text="Expected Bill : " 
+        android:textColor="@color/bluish_theme"
+        android:textSize="18sp"
+        android:textStyle="bold"
+		android:textAppearance="?android:attr/textAppearanceMedium"
+		 
+		 />
+    	
+    	 <TextView
+        android:id="@+id/units_used_graph_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="10pt"
+        android:text="Rs. 10,000" 
+        android:textColor="@color/bluish_theme"
+        android:textSize="18sp"/>
+     
+        
+    </LinearLayout>
+    
     
 </LinearLayout>
 
