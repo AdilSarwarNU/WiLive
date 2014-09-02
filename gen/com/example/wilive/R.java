@@ -9,6 +9,14 @@ package com.example.wilive;
 
 public final class R {
     public static final class attr {
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int buttonBarButtonStyle=0x7f010001;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int buttonBarStyle=0x7f010000;
     }
     public static final class color {
         public static final int black_overlay=0x7f040000;
@@ -53,14 +61,14 @@ public final class R {
         public static final int Address=0x7f090015;
         public static final int Address_Value=0x7f090016;
         public static final int CreateAccount_Button=0x7f090022;
-        public static final int Current_Bill=0x7f090031;
-        public static final int Current_Bill_Value=0x7f090032;
-        public static final int Current_Voltage=0x7f090035;
-        public static final int Current_Voltage_Value=0x7f090036;
+        public static final int Current_Bill=0x7f090033;
+        public static final int Current_Bill_Value=0x7f090034;
+        public static final int Current_Voltage=0x7f090037;
+        public static final int Current_Voltage_Value=0x7f090038;
         public static final int Device_status=0x7f090012;
         public static final int Device_status_Value=0x7f090013;
-        public static final int Expected_Bill=0x7f090033;
-        public static final int Expected_Bill_Value=0x7f090034;
+        public static final int Expected_Bill=0x7f090035;
+        public static final int Expected_Bill_Value=0x7f090036;
         public static final int Header_Logo=0x7f09001b;
         public static final int LoginBody_BlackBox_ET_container=0x7f09001e;
         public static final int LoginBody_BlackBox_Password=0x7f090020;
@@ -72,36 +80,38 @@ public final class R {
         public static final int LoginBody_LL_SV_LL_container_row3=0x7f090011;
         public static final int LoginBody_LL_SV_LL_container_row4=0x7f090014;
         public static final int LoginBody_LL_SV_LL_container_row5=0x7f090017;
-        public static final int LoginBody_LL_SV_LL_container_row6=0x7f090037;
+        public static final int LoginBody_LL_SV_LL_container_row6=0x7f090039;
         public static final int LoginBody_LL_SV_container=0x7f090001;
         public static final int LoginScreen_Body_container=0x7f09001c;
         public static final int LoginScreen_Container=0x7f090000;
         public static final int LoginScreen_Footer=0x7f090023;
         public static final int LoginScreen_Header_container=0x7f09001a;
-        public static final int Power_Usage=0x7f09002d;
-        public static final int Power_Usage_Value=0x7f09002e;
-        public static final int Settings_ChangePassword_Button=0x7f09002b;
-        public static final int Settings_ChangeTarrif_Button=0x7f09002c;
-        public static final int Settings_ColourScheme_Button=0x7f090029;
-        public static final int Settings_Container=0x7f090027;
-        public static final int Settings_GraphType_Button=0x7f09002a;
-        public static final int Settings_LL_container=0x7f090028;
+        public static final int Power_Usage=0x7f09002f;
+        public static final int Power_Usage_Value=0x7f090030;
+        public static final int Settings_ChangePassword_Button=0x7f09002d;
+        public static final int Settings_ChangeTarrif_Button=0x7f09002e;
+        public static final int Settings_ColourScheme_Button=0x7f09002b;
+        public static final int Settings_Container=0x7f090029;
+        public static final int Settings_GraphType_Button=0x7f09002c;
+        public static final int Settings_LL_container=0x7f09002a;
         public static final int SignIn_Button=0x7f090021;
         public static final int TabScreen_Body_container=0x7f090005;
         public static final int TabScreen_Container=0x7f090004;
         public static final int TabScreen_Footer=0x7f090007;
         public static final int Tab_bottomStrip=0x7f090008;
-        public static final int Units_Used=0x7f09002f;
-        public static final int Units_Used_Value=0x7f090030;
-        public static final int Usage_History_Button=0x7f090038;
+        public static final int Units_Used=0x7f090031;
+        public static final int Units_Used_Value=0x7f090032;
+        public static final int Usage_History_Button=0x7f09003a;
         public static final int User_ID=0x7f09000c;
         public static final int User_ID_Value=0x7f09000d;
         public static final int User_Name=0x7f09000f;
         public static final int User_Name_Value=0x7f090010;
-        public static final int action_settings=0x7f090039;
+        public static final int action_settings=0x7f09003b;
         public static final int bottomStrip=0x7f090024;
         public static final int fullscreen_content=0x7f090025;
         public static final int fullscreen_content_controls=0x7f090026;
+        public static final int graphContainer=0x7f090027;
+        public static final int graphStatsContainer=0x7f090028;
         public static final int pager=0x7f090006;
         public static final int planLogo=0x7f09000a;
         public static final int techLogo=0x7f090009;
@@ -115,8 +125,9 @@ public final class R {
         public static final int activity_info=0x7f030002;
         public static final int activity_login=0x7f030003;
         public static final int activity_login_home=0x7f030004;
-        public static final int activity_settings=0x7f030005;
-        public static final int activity_usage_details=0x7f030006;
+        public static final int activity_make_graph=0x7f030005;
+        public static final int activity_settings=0x7f030006;
+        public static final int activity_usage_details=0x7f030007;
     }
     public static final class menu {
         public static final int home=0x7f080000;
@@ -137,6 +148,7 @@ public final class R {
         public static final int title_activity_info=0x7f06000d;
         public static final int title_activity_login=0x7f060006;
         public static final int title_activity_login_home=0x7f060003;
+        public static final int title_activity_make_graph=0x7f06000f;
         public static final int title_activity_settings=0x7f06000e;
         public static final int title_activity_usage_details=0x7f06000c;
         public static final int title_section1=0x7f060009;
@@ -186,4 +198,51 @@ public final class R {
          */
         public static final int FullscreenTheme=0x7f070002;
     }
+    public static final class styleable {
+        /** 
+         Declare custom theme attributes that allow changing which styles are
+         used for button bars depending on the API level.
+         ?android:attr/buttonBarStyle is new as of API 11 so this is
+         necessary to support previous API levels.
+
+    
+ <declare-styleable name="ButtonBarContainerTheme"> 
+ <attr name="buttonBarStyle" format="reference" /> 
+ <attr name="buttonBarButtonStyle" format="reference" /> 
+ </declare-styleable> 
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #ButtonBarContainerTheme_buttonBarButtonStyle com.example.wilive:buttonBarButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ButtonBarContainerTheme_buttonBarStyle com.example.wilive:buttonBarStyle}</code></td><td></td></tr>
+           </table>
+           @see #ButtonBarContainerTheme_buttonBarButtonStyle
+           @see #ButtonBarContainerTheme_buttonBarStyle
+         */
+        public static final int[] ButtonBarContainerTheme = {
+            0x7f010000, 0x7f010001
+        };
+        /**
+          <p>This symbol is the offset where the {@link com.example.wilive.R.attr#buttonBarButtonStyle}
+          attribute's value can be found in the {@link #ButtonBarContainerTheme} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name com.example.wilive:buttonBarButtonStyle
+        */
+        public static final int ButtonBarContainerTheme_buttonBarButtonStyle = 1;
+        /**
+          <p>This symbol is the offset where the {@link com.example.wilive.R.attr#buttonBarStyle}
+          attribute's value can be found in the {@link #ButtonBarContainerTheme} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name com.example.wilive:buttonBarStyle
+        */
+        public static final int ButtonBarContainerTheme_buttonBarStyle = 0;
+    };
 }
